@@ -69,14 +69,24 @@
 	
 	
 
+
+\begin{frame}
+		\section{Representación de la solución} 
+				\frametitle{Representación de la solución}
+		
+		Vector de tamaño N en el que el índice del vector nos indica el orden en el que las ciudades deben de ser visitadas y el contenido de cada posición hace referencia al índice de la ciudad
+	\end{frame}
 	%------------------------------------------------
 \section{Diseño del algoritmo: Branch and Bound} 
 \begin{frame}
 	\frametitle{Diseño del algoritmo}
 	
-	Usaremos una cola con prioridad que será donde se introduzcan los nodos.
-	En la cola se seleccionará el nodo con mayor prioridad, y de dicho nodo se consultará el valor de su cota local, que en caso de ser mejor a la global se añadiran los hijos del nodo a la cola, y en caso de ser peor, se devuelve la solucion actual
-	
+
+
+Usaremos una cola con prioridad que será donde se introduzcan los nodos.
+En la cola se seleccionará el nodo con mayor prioridad, y de dicho nodo se consultará el valor de su cota local, que en caso de ser mejor a la global  y ser nodo hoja, se actualizará la solucion, en caso sólo de ser mejor que la global, se añadiran los hijos del nodo a la cola. En caso de ser peor, se devuelve la solucion actual.
+
+
 	
 \end{frame}	
 	\section{Pseudocódigo}
@@ -125,26 +135,28 @@
 	\frametitle{Pseudocódigo}
 	\footnotesize{	
 		\begin{algorithmic}				
-			\Require Matriz, S\_final[N] S\_parcial[N] Ciudades[N]={false} ciudad\_actual, nivel,valor\_maximo=0;
-			\State \textbf{Backtrack(S,S\_parcial,Ciudades,ciudad\_actual,nivel):}
-			\State Ciudades[ciudad\_actual]=true;
-			\State	   S\_parcial[nivel - 1]=ciudad\_actual;
-			\For {\textbf{i} to \textbf{N}}
-			
-			\If {Ciudades[i]==false}
-			\State 	valor\_actual = CalcularSolucionActual(S\_parcial);
-			\State 	\textbf{Backtrack(S,S\_parcial,Ciudades,i,nivel+1);}
-			\If{nodo\_actual == nodo\_hoja}
-			\State{ valor\_actual = CalcularSolucionActual(S\_parcial)}
-			\If{valor\_actual \textbf{mayor que} valor\_maximo}
-			\State{ S\_final = S\_Actual}
-			\State{ valor\_maximo = valor\_actual}
-			\EndIf
-			\EndIf
-			
-			\State Ciudades[i] = false;
-			\EndIf
-			\EndFor
+				\Require Matriz, S\_final[N] S\_parcial[N] Ciudades[N]={false} ciudad\_actual, nivel,valor\_maximo=0;
+				\State \textbf{Backtrack(S,S\_parcial,Ciudades,ciudad\_actual,nivel):}
+				\State Ciudades[ciudad\_actual]=true;
+				\State	   S\_parcial[nivel - 1]=ciudad\_actual;
+				\For {\textbf{i} to \textbf{N}}
+				
+				\If {Ciudades[i]==false}
+				\State 	valor\_actual = CalcularSolucionActual(S\_parcial);
+				\If {(cotalocal < cotaglobal)}
+				\State 	\textbf{Backtrack(S,S\_parcial,Ciudades,i,nivel+1);}
+				\EndIf
+				\If{nodo\_actual == nodo\_hoja}
+				\State{ valor\_actual = CalcularSolucionActual(S\_parcial)}
+				\If{valor\_actual \textbf{mayor que} valor\_maximo}
+				\State{ S\_final = S\_Actual}
+				\State{ valor\_maximo = valor\_actual}
+				\EndIf
+				\EndIf
+				
+				\State Ciudades[i] = false;
+				\EndIf
+				\EndFor
 			\end{algorithmic}			
 			}
 		\end{frame}

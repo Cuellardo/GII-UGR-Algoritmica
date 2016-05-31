@@ -44,12 +44,17 @@
 	
 	
 	%------------------------------------------------
+		\section{Representación de la solución} 
+		
+		
+Vector de tamaño N en el que el índice del vector nos indica el orden en el que las ciudades deben de ser visitadas y el contenido de cada posición hace referencia al índice de la ciudad
+	
 	\section{Diseño del algoritmo: Branch and Bound} 
 
 
 		
 		Usaremos una cola con prioridad que será donde se introduzcan los nodos.
-		En la cola se seleccionará el nodo con mayor prioridad, y de dicho nodo se consultará el valor de su cota local, que en caso de ser mejor a la global se añadiran los hijos del nodo a la cola, y en caso de ser peor, se devuelve la solucion actual
+		En la cola se seleccionará el nodo con mayor prioridad, y de dicho nodo se consultará el valor de su cota local, que en caso de ser mejor a la global  y ser nodo hoja, se actualizará la solucion, en caso sólo de ser mejor que la global, se añadiran los hijos del nodo a la cola. En caso de ser peor, se devuelve la solucion actual.
 		
 		
 
@@ -107,7 +112,9 @@
 				
 				\If {Ciudades[i]==false}
 				\State 	valor\_actual = CalcularSolucionActual(S\_parcial);
+				\If {(cotalocal < cotaglobal)}
 				\State 	\textbf{Backtrack(S,S\_parcial,Ciudades,i,nivel+1);}
+				\EndIf
 				\If{nodo\_actual == nodo\_hoja}
 				\State{ valor\_actual = CalcularSolucionActual(S\_parcial)}
 				\If{valor\_actual \textbf{mayor que} valor\_maximo}

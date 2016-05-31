@@ -1,7 +1,8 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n }{3}{0}{1}
-\beamer@sectionintoc {2}{Ejercicio}{4}{0}{2}
-\beamer@sectionintoc {3}{Dise\IeC {\~n}o del algoritmo}{5}{0}{3}
-\beamer@sectionintoc {4}{Pseudoc\IeC {\'o}digo}{7}{0}{4}
-\beamer@sectionintoc {5}{Eficiencia}{8}{0}{5}
+\beamer@sectionintoc {2}{Dise\IeC {\~n}o del algoritmo: Branch and Bound}{4}{0}{2}
+\beamer@sectionintoc {3}{Pseudoc\IeC {\'o}digo}{5}{0}{3}
+\beamer@sectionintoc {4}{Dise\IeC {\~n}o del algoritmo: Backtracking}{6}{0}{4}
+\beamer@sectionintoc {5}{Pseudoc\IeC {\'o}digo}{7}{0}{5}
+\beamer@sectionintoc {6}{Comparaci\IeC {\'o}n}{8}{0}{6}

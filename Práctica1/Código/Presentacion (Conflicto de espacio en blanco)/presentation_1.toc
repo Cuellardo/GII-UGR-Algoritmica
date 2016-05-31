@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.24pt}
+\beamer@endinputifotherversion {3.36pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n }{3}{0}{1}
 \beamer@sectionintoc {2}{Ordenaci\IeC {\'o}n}{5}{0}{2}

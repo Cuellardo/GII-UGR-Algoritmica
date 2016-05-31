@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.4)  18 MAY 2016 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.4)  1 JUN 2016 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,7 +972,13 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 
 
-LaTeX Warning: Label `fig:backtrackhibrida' multiply defined.
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
 
 )
 \openout1 = `presentation_4-1.aux'.
@@ -1162,45 +1168,53 @@ LaTeX Info: Redefining \% on input line 2.
 
 ] [5
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 103.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 103.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [6
+] [6
 
 ] [7
 
+] [8
+
 ]
-<../Codigo/backtrackempirica.png, id=277, 770.88pt x 578.16pt>
-File: ../Codigo/backtrackempirica.png Graphic file (type png)
+<../Codigo/Solucion/comparacion.png, id=333, 770.88pt x 578.16pt>
+File: ../Codigo/Solucion/comparacion.png Graphic file (type png)
 
-<use ../Codigo/backtrackempirica.png>
-Package pdftex.def Info: ../Codigo/backtrackempirica.png used on input line 152
-.
-(pdftex.def)             Requested size: 1156.31718pt x 867.23787pt.
- [8
+<use ../Codigo/Solucion/comparacion.png>
+Package pdftex.def Info: ../Codigo/Solucion/comparacion.png used on input line 
+170.
+(pdftex.def)             Requested size: 203.51895pt x 152.63823pt.
+ [9
 
- <../Codigo/backtrackempirica.png>]
-<../Codigo/backtrackhibrida.png, id=311, 770.88pt x 578.16pt>
-File: ../Codigo/backtrackhibrida.png Graphic file (type png)
+ <../Codigo/Solucion/comparacion.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 189.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 189.
 
-<use ../Codigo/backtrackhibrida.png>
-Package pdftex.def Info: ../Codigo/backtrackhibrida.png used on input line 172.
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [10
 
-(pdftex.def)             Requested size: 1156.31718pt x 867.23787pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:backtrack
-hibrida}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{my-label}) h
+as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \end{frame}
-                  [9
+l.208 \end{frame}
+                  [11
 
- <../Codigo/backtrackhibrida.png>] [10
+]pdfTeX warning (ext4): destination with the same identifier (name{my-label}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \end{frame}
+                  [12
+
+]pdfTeX warning (ext4): destination with the same identifier (name{my-label}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246 \end{frame}
+                  [13
 
 ]
 \tf@nav=\write6
@@ -1212,18 +1226,23 @@ l.172 \end{frame}
 \tf@snm=\write8
 \openout8 = `presentation_4-1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
-
-(./presentation_4-1.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+ (./presentation_4-1.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
-Package rerunfilecheck Info: File `presentation_4-1.out' has not changed.
-(rerunfilecheck)             Checksum: 1B21FD28C6CEB16180085309216F2BD5;248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
 
+
+Package rerunfilecheck Warning: File `presentation_4-1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `presentation_4-1.out':
+(rerunfilecheck)             Before: D12BFF9EB783CE34B555C94ADF68E27F;397
+(rerunfilecheck)             After:  A4BAB48A4C32260360065EF15312530A;348.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1231,25 +1250,28 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
  ) 
 Here is how much of TeX's memory you used:
- 18225 strings out of 493054
- 339353 string characters out of 6140587
- 426280 words of memory out of 5000000
- 21291 multiletter control sequences out of 15000+600000
- 11457 words of font info for 42 fonts, out of 8000000 for 9000
+ 18234 strings out of 493054
+ 339085 string characters out of 6140587
+ 427258 words of memory out of 5000000
+ 21293 multiletter control sequences out of 15000+600000
+ 11163 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,16n,60p,423b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on presentation_4-1.pdf (10 pages, 102525 bytes).
+pdfTeX warning (dest): name{Outline0.7} has been referenced but does not exis
+t, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+bx10.pfb>
+Output written on presentation_4-1.pdf (13 pages, 100115 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 28 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

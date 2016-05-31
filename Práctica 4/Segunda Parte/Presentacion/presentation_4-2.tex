@@ -104,13 +104,13 @@ Universidad de Granada \\ % Your institution for the title page
 				\State	 Nodo n.generarnodo(Vector\_ciudades[0])
 			\While {\textbf{!cola.empty()}{
 					nodo = cola.top();
-					if(nodo.cotalocal > cota global ){
+					\If(nodo.cotalocal > cota global ){
 						return solucion\_actual
-					}
-					else{
+					\Endif
+					\Else{
 						cola.add(nodo.generarhijos())
 					}
-					
+					\Endelse
 					
 					}
 				
@@ -120,7 +120,7 @@ Universidad de Granada \\ % Your institution for the title page
 				
 				
 			\end{algorithmic}	
-		}
+		
 \end{frame}
 
 \section{Eficiencia}
